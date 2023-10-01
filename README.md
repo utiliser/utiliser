@@ -1,8 +1,9 @@
 <p align="center">
 	<img src="https://avatars.githubusercontent.com/u/146632266?s=48&v=4" alt="@utiliser logo" />
+	<span>
+		a simple collections of react hooks
+	</span>
 </p>
-
-a simple collections of react hooks
 
 ### 🧪 Explore
 
