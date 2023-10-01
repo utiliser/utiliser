@@ -9,7 +9,8 @@
 		"build:docs": "yarn --cwd docs build",
 		"preview:demo": "yarn --cwd demo preview",
 		"start:doc": "yarn --cwd docs start",
-		"serve:doc": "yarn --cwd docs serve"
+		"serve:doc": "yarn --cwd docs serve",
+		"deploy:doc": "yarn --cwd docs deploy"
 	},
 	"repository": {
 		"type": "git",

@@ -6,9 +6,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula')
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-	title: 'URH[🪝]',
+	title: 'utiliser',
 	tagline: 'The simple react hooks.',
-	url: 'https://your-docusaurus-test-site.com',
 	baseUrl: '/',
 	onBrokenLinks: 'throw',
 	onBrokenMarkdownLinks: 'warn',
@@ -16,8 +15,10 @@ const config = {
 
 	// GitHub pages deployment config.
 	// If you aren't using GitHub pages, you don't need these.
-	organizationName: 'Virak Khun', // Usually your GitHub org/user name.
-	projectName: 'urh-react-hooks', // Usually your repo name.
+	url: 'https://utiliser.github.io',
+	organizationName: 'utiliser', // Usually your GitHub org/user name.
+	projectName: 'utiliser', // Usually your repo name.
+	trailingSlash: false,
 
 	// Even if you don't use internalization, you can use this field to set useful
 	// metadata like html lang. For example, if your site is Chinese, you may want
@@ -34,7 +35,7 @@ const config = {
 			({
 				docs: {
 					sidebarPath: require.resolve('./sidebars.js'),
-					editUrl: 'https://github.com/virakkhun',
+					editUrl: 'https://github.com/utiliser/utiliser',
 				},
 				theme: {
 					customCss: require.resolve('./src/css/custom.css'),
@@ -47,7 +48,7 @@ const config = {
 		/** @type {import('@docusaurus/preset-classic').ThemeConfig} */
 		({
 			navbar: {
-				title: 'URH[🪝]',
+				title: 'utiliser',
 				items: [
 					{
 						type: 'doc',
@@ -56,7 +57,7 @@ const config = {
 						docId: 'intro',
 					},
 					{
-						href: 'https://github.com/virakkhun/urh-react-hooks',
+						href: 'https://github.com/utiliser/utiliser',
 						label: 'GitHub',
 						position: 'right',
 					},
