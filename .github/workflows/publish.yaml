@@ -1,9 +1,12 @@
-name: Release
+name: Publish to NPM
 
 on:
   pull_request:
     branches:
-      - 'main'
+      - 'release-react-hooks'
+  push:
+    branches:
+      - 'release-react-hooks'
 
 jobs:
   release:

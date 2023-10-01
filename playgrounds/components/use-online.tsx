@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 import { useOnline } from '@virakkhun/react-hooks'
+=======
+import { useOnline } from '@utiliser/react-hooks'
+>>>>>>> develop
 import React from 'react'
 
 export const UseIsOnline = () => {

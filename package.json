@@ -9,7 +9,8 @@
 		"preview:playgrounds": "yarn --cwd playgrounds preview",
 		"build:docs": "yarn --cwd docs build",
 		"start:doc": "yarn --cwd docs start",
-		"serve:doc": "yarn --cwd docs serve"
+		"serve:doc": "yarn --cwd docs serve",
+		"deploy:doc": "yarn --cwd docs deploy"
 	},
 	"repository": {
 		"type": "git",
