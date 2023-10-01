@@ -1,5 +1,5 @@
 {
-	"name": "@virakkhun/react-hooks",
+	"name": "@utiliser/react-hooks",
 	"version": "1.0.0",
 	"private": false,
 	"author": "Virak Khun",
@@ -19,7 +19,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/virakkhun/use.git"
+		"url": "git+https://github.com/utiliser/utiliser.git"
 	},
 	"keywords": [
 		"react",
@@ -30,9 +30,9 @@
 		"utilities"
 	],
 	"bugs": {
-		"url": "https://github.com/virakkhun/use.git/issues"
+		"url": "https://github.com/utiliser/utiliser.git/issues"
 	},
-	"homepage": "https://github.com/virakkhun/use.git#readme",
+	"homepage": "https://github.com/utiliser/utiliser.git#readme",
 	"peerDependencies": {
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0"
