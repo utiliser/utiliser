@@ -18,6 +18,7 @@ const config = {
 	url: 'https://utiliser.github.io',
 	organizationName: 'utiliser', // Usually your GitHub org/user name.
 	projectName: 'utiliser', // Usually your repo name.
+	trailingSlash: false,
 
 	// Even if you don't use internalization, you can use this field to set useful
 	// metadata like html lang. For example, if your site is Chinese, you may want
@@ -34,7 +35,7 @@ const config = {
 			({
 				docs: {
 					sidebarPath: require.resolve('./sidebars.js'),
-					editUrl: 'https://github.com/virakkhun',
+					editUrl: 'https://github.com/utiliser/utiliser',
 				},
 				theme: {
 					customCss: require.resolve('./src/css/custom.css'),
@@ -47,7 +48,7 @@ const config = {
 		/** @type {import('@docusaurus/preset-classic').ThemeConfig} */
 		({
 			navbar: {
-				title: 'URH[🪝]',
+				title: 'utiliser',
 				items: [
 					{
 						type: 'doc',
@@ -56,7 +57,7 @@ const config = {
 						docId: 'intro',
 					},
 					{
-						href: 'https://github.com/virakkhun/urh-react-hooks',
+						href: 'https://github.com/utiliser/utiliser',
 						label: 'GitHub',
 						position: 'right',
 					},
