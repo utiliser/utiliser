@@ -40,4 +40,4 @@ jobs:
           publish_dir: ./docs/build
 
       - name: Deploy
-        run: GIT_USER=virakkhun yarn deploy
+        run: GIT_USER=virakkhun yarn deploy:doc
