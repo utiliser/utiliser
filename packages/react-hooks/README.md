@@ -1,12 +1,11 @@
-#
-
-## URH 🪝
-
-a small simple collections of react hooks
+<p align="center">
+	<img src="https://avatars.githubusercontent.com/u/146632266?s=48&v=4" alt="@utiliser logo" />
+</p>
+<p align="center">a simple collections of react hooks</p>
 
 ### 🧪 Explore
 
-- [Doc](https://urh-react-hooks.vercel.app/)
+- [Doc](https://utiliser.vercel.app/)
 
 ### 📖 Prerequisite
 
@@ -17,19 +16,19 @@ a small simple collections of react hooks
 using NPM:
 
 ```bash
-npm install urh-react-hooks
+npm install @utiliser/react-hooks
 ```
 
 using Yarn:
 
 ```bash
-yarn add urh-react-hooks
+yarn add @utiliser/react-hooks
 ```
 
 ### 💅 Usage
 
 ```tsx
-import { useOnline } from 'urh-react-hooks'
+import { useOnline } from '@utiliser/react-hooks'
 
 const App = () => {
 	const { isOnline } = useOnline()
