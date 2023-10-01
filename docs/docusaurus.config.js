@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula')
 const config = {
 	title: 'utiliser',
 	tagline: 'The simple react hooks.',
-	baseUrl: '/utiliser',
+	baseUrl: '/utiliser/',
 	onBrokenLinks: 'throw',
 	onBrokenMarkdownLinks: 'warn',
 	favicon: 'img/favicon.ico',
