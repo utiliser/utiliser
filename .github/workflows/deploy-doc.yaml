@@ -38,3 +38,9 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./docs/build
+
+      - name: Deploy Doc
+        run: GIT_USER=${{ secrets.USERNAME }} yarn deploy
+        env:
+          GIT_USER: ${{ secrets.USERNAME }}
+          GIT_PASS: ${{ secrets.PAT }}
