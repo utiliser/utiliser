@@ -1,5 +1,5 @@
+import { useOnline } from '@utiliser/react-hooks'
 import React from 'react'
-import { useOnline } from 'urh-react-hooks'
 
 export const UseIsOnline = () => {
 	const { isOnline } = useOnline()
