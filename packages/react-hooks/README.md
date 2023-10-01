@@ -5,7 +5,7 @@
 
 ### 🧪 Explore
 
-- [Doc](https://utiliser.vercel.app/)
+- [Doc](https://utiliser.github.io/)
 
 ### 📖 Prerequisite
 
