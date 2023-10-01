@@ -40,7 +40,7 @@ jobs:
           publish_dir: ./docs/build
 
       - name: Deploy Doc
-        run: GIT_USER=${{ secrets.USERNAME }} yarn deploy
+        run: GIT_USER=${{ secrets.USERNAME }} yarn deploy:doc
         env:
           GIT_USER: ${{ secrets.USERNAME }}
           GIT_PASS: ${{ secrets.PAT }}
