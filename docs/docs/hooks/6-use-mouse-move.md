@@ -2,7 +2,7 @@
 id: use-mouse-move
 title: useMouseMove
 description: useMouseMove is a hook which return `ts clientX`, `ts clientY`, `ts pageX`, `ts pageY`
-tags: 
+tags:
   - hook
   - useMouseMove
 ---
@@ -14,20 +14,19 @@ tags:
 ### Usage Example
 
 ```tsx
-import { useMouseMove } from 'urh-react-hooks'
+import { useMouseMove } from '@utiliser/react-hooks'
 
 const App = () => {
+	const { clientX, clientY, pageX, pageY } = useMouseMove()
 
-  const { clientX, clientY, pageX, pageY } = useMouseMove()
-
-  return (
-    <div>
-      <p>{ clientX }</p>
-      <p>{ clientY }</p>
-      <p>{ pageX }</p>
-      <p>{ pageY }</p>
-    </div>
-  )
+	return (
+		<div>
+			<p>{clientX}</p>
+			<p>{clientY}</p>
+			<p>{pageX}</p>
+			<p>{pageY}</p>
+		</div>
+	)
 }
 
 export default App

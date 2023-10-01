@@ -6,7 +6,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula')
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-	title: 'utiliser',
+	title: '@utiliser/react-hooks',
 	tagline: 'The simple react hooks.',
 	baseUrl: '/utiliser/',
 	onBrokenLinks: 'throw',
@@ -17,7 +17,7 @@ const config = {
 	// If you aren't using GitHub pages, you don't need these.
 	url: 'https://utiliser.github.io',
 	organizationName: 'utiliser', // Usually your GitHub org/user name.
-	projectName: 'utiliser', // Usually your repo name.
+	projectName: 'react-hooks', // Usually your repo name.
 	trailingSlash: false,
 	deploymentBranch: 'deployment',
 
@@ -49,7 +49,7 @@ const config = {
 		/** @type {import('@docusaurus/preset-classic').ThemeConfig} */
 		({
 			navbar: {
-				title: 'utiliser',
+				title: '@utiliser/react-hooks',
 				items: [
 					{
 						type: 'doc',

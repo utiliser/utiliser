@@ -29,7 +29,7 @@ yarn add urh-react-hooks
 ### 💅 Usage
 
 ```tsx
-import { useOnline } from 'urh-react-hooks'
+import { useOnline } from '@utiliser/react-hooks'
 
 const App = () => {
 	const { isOnline } = useOnline()
