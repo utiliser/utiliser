@@ -3,6 +3,7 @@
 
 const lightCodeTheme = require('prism-react-renderer/themes/github')
 const darkCodeTheme = require('prism-react-renderer/themes/dracula')
+const { version } = require('../packages/react-hooks/package.json')
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -56,6 +57,16 @@ const config = {
 						position: 'left',
 						label: 'Docs',
 						docId: 'intro',
+					},
+					{
+						href: `https://www.npmjs.com/package/@utiliser/react-hooks/v/${version}`,
+						position: 'right',
+						label: `v${version}`,
+					},
+					{
+						href: 'https://www.npmjs.com/package/@utiliser/react-hooks',
+						position: 'right',
+						label: 'npm',
 					},
 					{
 						href: 'https://github.com/utiliser/utiliser',
