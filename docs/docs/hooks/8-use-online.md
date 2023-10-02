@@ -2,7 +2,7 @@
 id: use-online
 title: useOnline
 description: useOnline
-tags: 
+tags:
   - hook
   - useOnline
 ---
@@ -14,17 +14,12 @@ tags:
 ### Usage Example
 
 ```tsx
-import { useOnline } from 'urh-react-hooks'
+import { useOnline } from '@utiliser/react-hooks'
 
 const App = () => {
+	const { isOnline } = useOnline()
 
-  const { isOnline } = useOnline()
-
-  return (
-    <div>
-      { isOnline ? <p>Online</p> : <p>Offline</p> }
-    </div>
-  )
+	return <div>{isOnline ? <p>Online</p> : <p>Offline</p>}</div>
 }
 
 export default App

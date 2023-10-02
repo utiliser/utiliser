@@ -2,7 +2,7 @@
 id: use-intersect
 title: useIntersectionObserver
 description: useIntersectionObserver is an intersection function which trigger when it reach the targets.
-tags: 
+tags:
   - hook
   - useIntersectionObserver
 ---
@@ -14,22 +14,19 @@ tags:
 ### Usage Example
 
 ```tsx
-import { useIntersectionObserver } from 'urh-react-hooks'
+import { useIntersectionObserver } from '@utiliser/react-hooks'
 
 const App = () => {
+	useIntersectionObserver({
+		target: '.target',
+		className: 'popUp', // CSS class which trigger when the target intersect
+	})
 
-  useIntersectionObserver({
-    target: '.target',
-    className: 'popUp' // CSS class which trigger when the target intersect
-  })
-
-  return (
-    <div>
-      <div className="target">
-        I pop up
-      </div>
-    </div>
-  )
+	return (
+		<div>
+			<div className="target">I pop up</div>
+		</div>
+	)
 }
 
 export default App

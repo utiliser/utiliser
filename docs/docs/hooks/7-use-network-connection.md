@@ -2,7 +2,7 @@
 id: use-network-connection
 title: useNetworkConnection
 description: useNetworkConnection is a hook which return network type, downlink, rtt, saveData
-tags: 
+tags:
   - hook
   - useNetworkConnection
 ---
@@ -14,20 +14,19 @@ tags:
 ### Usage Example
 
 ```tsx
-import { useNetworkConnection } from 'urh-react-hooks'
+import { useNetworkConnection } from '@utiliser/react-hooks'
 
 const App = () => {
+	const { network } = useNetworkConnection()
 
-  const { network } = useNetworkConnection()
-
-  return (
-    <div>
-      <p>{network?.downlink}</p>
-      <p>{network?.effectiveType}</p>
-      <p>{network?.rtt}</p>
-      <p>{network?.saveData}</p>
-    </div>
-  )
+	return (
+		<div>
+			<p>{network?.downlink}</p>
+			<p>{network?.effectiveType}</p>
+			<p>{network?.rtt}</p>
+			<p>{network?.saveData}</p>
+		</div>
+	)
 }
 
 export default App

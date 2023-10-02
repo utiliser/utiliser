@@ -7,6 +7,7 @@ on:
   pull_request:
     branches:
       - docs
+  workflow_dispatch:
 
 jobs:
   deploy:
@@ -14,6 +15,9 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+      pages: write
+      id-token: write
+
     concurrency:
       group: ${{ github.workflow }}-${{ github.ref }}
 
@@ -31,7 +35,7 @@ jobs:
         run: yarn install
 
       - name: Build website
-        run: yarn build:docs
+        run: yarn build:doc
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
@@ -39,9 +43,3 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./docs/build
           publish_branch: deployment
-
-      - name: Deploy Doc
-        run: GIT_USER=${{ secrets.USERNAME }} yarn deploy:doc
-        env:
-          GIT_USER: ${{ secrets.USERNAME }}
-          GIT_PASS: ${{ secrets.PAT }}

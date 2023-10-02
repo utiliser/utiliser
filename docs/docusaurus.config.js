@@ -3,12 +3,13 @@
 
 const lightCodeTheme = require('prism-react-renderer/themes/github')
 const darkCodeTheme = require('prism-react-renderer/themes/dracula')
+const { version } = require('../packages/react-hooks/package.json')
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-	title: 'utiliser',
+	title: '@utiliser/react-hooks',
 	tagline: 'The simple react hooks.',
-	baseUrl: '/',
+	baseUrl: '/utiliser/',
 	onBrokenLinks: 'throw',
 	onBrokenMarkdownLinks: 'warn',
 	favicon: 'img/favicon.ico',
@@ -17,7 +18,7 @@ const config = {
 	// If you aren't using GitHub pages, you don't need these.
 	url: 'https://utiliser.github.io',
 	organizationName: 'utiliser', // Usually your GitHub org/user name.
-	projectName: 'utiliser', // Usually your repo name.
+	projectName: 'react-hooks', // Usually your repo name.
 	trailingSlash: false,
 	deploymentBranch: 'deployment',
 
@@ -49,13 +50,23 @@ const config = {
 		/** @type {import('@docusaurus/preset-classic').ThemeConfig} */
 		({
 			navbar: {
-				title: 'utiliser',
+				title: '@utiliser/react-hooks',
 				items: [
 					{
 						type: 'doc',
 						position: 'left',
 						label: 'Docs',
 						docId: 'intro',
+					},
+					{
+						href: `https://www.npmjs.com/package/@utiliser/react-hooks/v/${version}`,
+						position: 'right',
+						label: `v${version}`,
+					},
+					{
+						href: 'https://www.npmjs.com/package/@utiliser/react-hooks',
+						position: 'right',
+						label: 'npm',
 					},
 					{
 						href: 'https://github.com/utiliser/utiliser',
