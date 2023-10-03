@@ -2,7 +2,7 @@
 id: use-window-size
 title: useWindowSize
 description: useWindowSize is a hook which return `ts height`, `ts widht` when resizing the window.
-tags: 
+tags:
   - hook
   - useWindowSize
 ---
@@ -14,18 +14,17 @@ tags:
 ### Usage Example
 
 ```tsx
-import { useWindowSize } from 'urh-react-hooks'
+import { useWindowSize } from '@utiliser/react-hooks'
 
 const App = () => {
+	const { height, width } = useWindowSize()
 
-  const { height, width } = useWindowSize()
-
-  return (
-    <div>
-      <p>{ height }</p>
-      <p>{ width }</p>
-    </div>
-  )
+	return (
+		<div>
+			<p>{height}</p>
+			<p>{width}</p>
+		</div>
+	)
 }
 
 export default App

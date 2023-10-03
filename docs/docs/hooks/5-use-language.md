@@ -2,7 +2,7 @@
 id: use-language
 title: useLanguage
 description: useLanguage is a hook use to detect a current languauge is being used as your preference.
-tags: 
+tags:
   - hook
   - useLauguage
 ---
@@ -14,17 +14,12 @@ tags:
 ### Usage Example
 
 ```tsx
-import { useLanguage } from 'urh-react-hooks'
+import { useLanguage } from '@utiliser/react-hooks'
 
 const App = () => {
+	const { lang } = useLangauge()
 
-  const { lang } = useLangauge()
-
-  return (
-    <div>
-      { lang }
-    </div>
-  )
+	return <div>{lang}</div>
 }
 
 export default App

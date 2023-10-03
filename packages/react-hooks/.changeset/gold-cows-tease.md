@@ -2,4 +2,4 @@
 '@utiliser/react-hooks': patch
 ---
 
-change doc url
+add feature useOS
