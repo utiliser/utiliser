@@ -4,9 +4,6 @@ on:
   pull_request:
     branches:
       - 'release-react-hooks'
-  push:
-    branches:
-      - 'release-react-hooks'
 
 jobs:
   release:

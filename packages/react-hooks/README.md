@@ -5,7 +5,7 @@
 
 ### 🧪 Explore
 
-- [Doc](https://utiliser.github.io/)
+- [Doc](https://utiliser.github.io/utiliser)
 
 ### 📖 Prerequisite
 
