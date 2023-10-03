@@ -4,11 +4,11 @@ sidebar_position: 1
 title: Getting Started
 ---
 
-Welcome to **URH[use react hooks🪝]**.
+Welcome to **@utiliser/react-hooks**.
 
 ### Prequesites
 
-- [React](https://reactjs.org) ^18.*
+- [React](https://reactjs.org) ^18.\*
 - [Node.js](https://nodejs.org/en/download/) version 16.14 or above:
 - [TypeScript](https://www.typescriptlang.org/)
 
@@ -19,13 +19,13 @@ Choose your favorite package manager either **npm** or **yarn**.
 > with npm:
 
 ```bash
-npm install urh-react-hooks
+npm install @utiliser/react-hooks
 ```
 
 > with yarn:
 
 ```bash
-yarn add urh-react-hooks
+yarn add @utiliser/react-hooks
 ```
 
 ## Quick Example
@@ -33,17 +33,12 @@ yarn add urh-react-hooks
 To use a hook, you will need to import it.
 
 ```tsx
-import { useOnline } from 'urh-react-hooks'
+import { useOnline } from '@utiliser/react-hooks'
 
 const App = () => {
+	const { isOnline } = useOnline()
 
-  const { isOnline } = useOnline()
-
-  return (
-    <div>
-      { isOnline ? <p>Online</p> : <p>Offline</p> }
-    </div>
-  )
+	return <div>{isOnline ? <p>Online</p> : <p>Offline</p>}</div>
 }
 
 export default App

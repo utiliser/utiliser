@@ -2,7 +2,7 @@
 id: use-is-email
 title: useIsEmail
 description: useIsEmail is a hook which return true if the value that give match email regex pattern.
-tags: 
+tags:
   - hook
   - useIsEmail
 ---
@@ -14,24 +14,22 @@ tags:
 ### Usage Example
 
 ```tsx
-import { useIsEmail } from 'urh-react-hooks'
+import { useIsEmail } from '@utiliser/react-hooks'
 
 const App = () => {
+	const [email, setEmail] = useState<string>('')
+	const { isEmail, checkIfEmail } = useIsEmail(email)
 
-  const [email, setEmail] = useState<string>('')
-  const { isEmail, checkIfEmail } = useIsEmail(email)
-
-
-  return (
-    <div>
-      <input 
-        type="text"
-        value={email}
-        onChange={(e) => setEmail(e.target.value)}
-        onKeyDown={checkIfEmail}
-      />
-    </div>
-  )
+	return (
+		<div>
+			<input
+				type="text"
+				value={email}
+				onChange={(e) => setEmail(e.target.value)}
+				onKeyDown={checkIfEmail}
+			/>
+		</div>
+	)
 }
 
 export default App

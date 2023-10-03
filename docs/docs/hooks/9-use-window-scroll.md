@@ -2,7 +2,7 @@
 id: use-window-scroll
 title: useWindowScroll
 description: useWindowScroll is a hook which return `ts scrollX`, `ts scrollY` when scrolling.
-tags: 
+tags:
   - hook
   - useWindowScroll
 ---
@@ -14,18 +14,17 @@ tags:
 ### Usage Example
 
 ```tsx
-import { useWindowScroll } from 'urh-react-hooks'
+import { useWindowScroll } from '@utiliser/react-hooks'
 
 const App = () => {
+	const { scrollX, scrollY } = useWindowScroll()
 
-  const { scrollX, scrollY } = useWindowScroll()
-
-  return (
-    <div>
-      <p>{ scrollX }</p>
-      <p>{ scrollY }</p>
-    </div>
-  )
+	return (
+		<div>
+			<p>{scrollX}</p>
+			<p>{scrollY}</p>
+		</div>
+	)
 }
 
 export default App
