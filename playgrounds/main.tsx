@@ -10,5 +10,5 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
 		<br />
 		<p>useNetworkConnection</p>
 		<UseNetworkConnection />
-	</React.StrictMode>,
+	</React.StrictMode>
 )
