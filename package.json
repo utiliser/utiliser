@@ -4,12 +4,12 @@
 	"version": "0.0.0",
 	"type": "module",
 	"scripts": {
-		"start:demo": "yarn --cwd demo start",
-		"build:demo": "yarn --cwd demo build",
-		"build:doc": "yarn --cwd docs build",
-		"preview:demo": "yarn --cwd demo preview",
-		"start:doc": "yarn --cwd docs start",
+		"start:play": "yarn --cwd playgrounds start",
+		"build:play": "yarn --cwd playgrounds build",
+		"preview:play": "yarn --cwd playgrounds preview",
 		"serve:doc": "yarn --cwd docs serve",
+		"start:doc": "yarn --cwd docs start",
+		"build:doc": "yarn --cwd docs build",
 		"deploy:doc": "yarn --cwd docs deploy"
 	},
 	"repository": {
@@ -30,7 +30,7 @@
 	"homepage": "https://github.com/virakkhun/urh-react-hooks.git#readme",
 	"workspaces": [
 		"packages/*",
-		"demo",
+		"playgrounds",
 		"docs"
 	],
 	"dependencies": {
